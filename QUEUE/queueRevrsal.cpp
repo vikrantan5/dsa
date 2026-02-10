@@ -17,13 +17,13 @@ int main(){
     q.push(53);
     q.push(52);
 
-    int queueSize = q.size();
-    while(queueSize--){
+    // int queueSize = q.size();
+    while(!q.empty()){
         st.push(q.front());
         q.pop();
     }
-    int stackSize =st.size();
-    while(stackSize--){
+    // int stackSize =st.size();
+    while(!st.empty()){
         q.push(st.top());
         st.pop();
     }
